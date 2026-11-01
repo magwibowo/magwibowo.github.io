@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M. Agung Wibowo - Software Developer | IT Enthusiast | UI/UX Designer</title>
+<meta name="description" content="Building Digital Solutions Through Technology, Creativity, and Innovation. Portofolio M. Agung Wibowo.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+tailwind.config={theme:{extend:{colors:{teal:{50:'#f0fdfa',100:'#ccfbf1',500:'#14A7A0',600:'#0d9488',700:'#0f766e'},pink:{50:'#fdf2f8',100:'#fce7f3',500:'#F76B8A',600:'#db2777'}},fontFamily:{sans:['Plus Jakarta Sans','sans-serif']}}}}
+</script>
+<style>
+body{font-family:'Plus Jakarta Sans',sans-serif;background:#F8FAFC;color:#1E293B}
+.clean-card{background:#fff;border:1px solid #E2E8F0;box-shadow:0 4px 20px -2px rgba(15,23,42,.04)}
+.tg{background:linear-gradient(135deg,#14A7A0,#0D9488)}
+.pg{background:linear-gradient(135deg,#F76B8A,#E11D48)}
+.soft{background:radial-gradient(circle at top right,rgba(20,167,160,.06),transparent 50%),radial-gradient(circle at bottom left,rgba(247,107,138,.05),transparent 50%)}
+section{scroll-margin-top:6rem}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body class="min-h-screen soft">
+
+<div id="toast" class="fixed top-5 right-5 z-[60] -translate-y-40 opacity-0 transition-all duration-300 pointer-events-none bg-slate-900 text-white px-5 py-3 rounded-2xl shadow-xl text-sm font-semibold"></div>
+
+<header class="sticky top-0 z-40 backdrop-blur-md bg-white/80 border-b border-slate-200/80">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+<a href="#hero" class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl tg flex items-center justify-center text-white font-black text-xl">AW</div>
+<div><span class="font-extrabold text-lg block leading-tight">M. Agung Wibowo</span><span class="text-xs text-slate-500 font-medium">Software Developer &amp; UI/UX</span></div>
+</a>
+<nav id="nav" class="hidden lg:flex items-center gap-1 bg-slate-100/90 p-1.5 rounded-full border border-slate-200 text-sm font-semibold"></nav>
+<div class="flex items-center gap-3">
+<a href="#contact" class="hidden sm:inline-flex tg text-white px-5 py-2.5 rounded-xl font-bold text-sm">Hubungi Saya</a>
+<button id="menu-btn" aria-label="Buka menu" class="lg:hidden p-2.5 rounded-xl bg-slate-100"><i data-lucide="menu" class="w-6 h-6"></i></button>
+</div>
+</div>
+<div id="menu" class="hidden lg:hidden border-t border-slate-200 bg-white px-4 py-3 space-y-1"></div>
+</header>
+
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24 pt-10 pb-24">
+
+<section id="gallery" aria-label="Galeri foto">
+<div id="slider" class="relative rounded-3xl overflow-hidden clean-card aspect-[4/3] sm:aspect-[21/9]">
+<div id="slides" class="flex h-full transition-transform duration-500"></div>
+<button id="s-prev" aria-label="Foto sebelumnya" class="absolute left-3 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black/40 text-white hover:bg-black/60"><i data-lucide="chevron-left" class="w-5 h-5"></i></button>
+<button id="s-next" aria-label="Foto berikutnya" class="absolute right-3 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black/40 text-white hover:bg-black/60"><i data-lucide="chevron-right" class="w-5 h-5"></i></button>
+<div id="dots" class="absolute bottom-4 left-4 flex gap-2"></div>
+<p id="cap" class="absolute bottom-4 right-4 max-w-[60%] sm:max-w-xs text-right text-xs font-medium text-white bg-black/50 backdrop-blur px-3 py-2 rounded-xl"></p>
+</div>
+</section>
+
+<section id="hero">
+<div class="grid lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 space-y-6">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-teal-50 border border-teal-100 text-teal-700 text-xs font-bold"><span class="w-2 h-2 rounded-full bg-teal-500"></span>Software Developer | IT Enthusiast | UI/UX Designer</div>
+<h1 class="sr-only">M. Agung Wibowo - Software Developer, IT Enthusiast, UI/UX Designer</h1>
+<p class="text-lg text-slate-600 leading-relaxed max-w-2xl">Halo, saya <b class="text-slate-900">Agung Wibowo</b>, lulusan D4 Teknik Informatika Politeknik Negeri Malang dengan latar belakang D3 Teknik Komputer. Saya mengerjakan pengembangan web, infrastruktur jaringan, IoT, dan desain antarmuka.</p>
+<div class="flex flex-wrap gap-4 pt-2">
+<a href="#projects" class="tg text-white px-7 py-3.5 rounded-2xl font-bold shadow-md shadow-teal-500/20 flex items-center gap-2">Lihat Proyek <i data-lucide="arrow-down-right" class="w-5 h-5"></i></a>
+<a href="assets/cvatsmagwibowo.pdf" download class="px-7 py-3.5 rounded-2xl font-bold border-2 border-slate-200 hover:border-pink-500 hover:text-pink-500 bg-white text-slate-700 flex items-center gap-2 transition"><i data-lucide="download" class="w-5 h-5"></i>Unduh CV (PDF)</a>
+</div>
+<div class="pt-6 grid grid-cols-3 gap-4 border-t border-slate-200">
+<div><div class="text-3xl font-extrabold">10</div><div class="text-xs text-slate-500 font-medium">Proyek</div></div>
+<div><div class="text-3xl font-extrabold">2</div><div class="text-xs text-slate-500 font-medium">Magang</div></div>
+<div><div class="text-3xl font-extrabold">10</div><div class="text-xs text-slate-500 font-medium">Sertifikasi &amp; pelatihan</div></div>
+</div>
+</div>
+<div class="lg:col-span-5">
+<div class="clean-card rounded-3xl p-6 space-y-5 max-w-sm mx-auto lg:max-w-none">
+<!-- Ganti dengan fotomu: simpan sebagai assets/foto-profil.jpg -->
+<div class="relative rounded-2xl overflow-hidden aspect-square tg flex items-center justify-center text-white text-7xl font-black">
+<img src="assets/foto-profil.png" alt="Foto M. Agung Wibowo" class="absolute inset-0 w-full h-full object-cover" onerror="this.remove()">
+</div>
+<div class="flex flex-wrap gap-2 text-xs font-semibold">
+<span class="px-3 py-1 rounded-lg bg-slate-100 border border-slate-200">Laravel</span>
+<span class="px-3 py-1 rounded-lg bg-teal-50 text-teal-700 border border-teal-100">Next.js</span>
+<span class="px-3 py-1 rounded-lg bg-pink-50 text-pink-600 border border-pink-100">ESP32</span>
+<span class="px-3 py-1 rounded-lg bg-slate-100 border border-slate-200">Figma</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="about" class="space-y-8">
+<h2 class="text-2xl sm:text-3xl font-extrabold border-b border-slate-200 pb-4">Tentang Saya</h2>
+<div class="grid lg:grid-cols-12 gap-8">
+<div class="lg:col-span-7 space-y-4 text-slate-600 leading-relaxed max-w-prose">
+<p>Saya lulusan D4 Teknik Informatika Politeknik Negeri Malang dengan latar belakang D3 Teknik Komputer Politeknik Negeri Sriwijaya. Minat dan pengalaman saya mencakup pengembangan perangkat lunak, teknologi informasi, infrastruktur jaringan, Internet of Things (IoT), dan desain antarmuka digital.</p>
+<p>Saya membangun aplikasi web dengan Laravel, PHP Native, dan Next.js, mengintegrasikan Network Attached Storage (NAS), dan merakit perangkat IoT dengan ESP32 dan ESP8266. Dua kali kerja praktik di PT Kereta Api Indonesia (Daop VII Madiun dan Divre III Palembang) memberi saya gambaran penerapan TI di lingkungan operasional perusahaan.</p>
+<p>Di luar pemrograman, saya tertarik pada UI/UX, desain grafis, fotografi, dan multimedia. Saya pernah menjadi Core Team Mentor UI/UX di Google Developer Group on Campus Polsri dan Ketua Pelaksana Festival Multimedia dan Teknik Komputer 2022.</p>
+<div class="clean-card rounded-2xl p-5 text-sm space-y-2">
+<div class="flex justify-between gap-4"><span class="text-slate-400">Lokasi</span><b>Palembang, Sumatera Selatan</b></div>
+<div class="flex justify-between gap-4"><span class="text-slate-400">Bahasa Indonesia</span><b>Native</b></div>
+<div class="flex justify-between gap-4"><span class="text-slate-400">Bahasa Inggris</span><b>TOEIC ETS 585</b></div>
+</div>
+</div>
+<div class="lg:col-span-5 space-y-4" id="edu"></div>
+</div>
+</section>
+
+<section id="skills" class="space-y-6">
+<h2 class="text-2xl sm:text-3xl font-extrabold border-b border-slate-200 pb-4">Keahlian</h2>
+<div id="skill-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+</section>
+
+<section id="projects" class="space-y-6">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-slate-200 pb-4">
+<div><h2 class="text-2xl sm:text-3xl font-extrabold">Proyek</h2><p class="text-slate-500 text-sm mt-1">Sepuluh proyek dari kampus, magang, aplikasi web berbasis peta, dan karya desain.</p></div>
+<div id="tabs" class="flex flex-wrap gap-1 bg-slate-100 p-1 rounded-xl text-xs font-semibold"></div>
+</div>
+<div id="project-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch"></div>
+</section>
+
+<section id="experience" class="space-y-8">
+<h2 class="text-2xl sm:text-3xl font-extrabold border-b border-slate-200 pb-4">Pengalaman &amp; Organisasi</h2>
+<div class="grid lg:grid-cols-12 gap-8">
+<div class="lg:col-span-5 clean-card rounded-3xl p-6 sm:p-8 space-y-6 self-start">
+<h3 class="text-lg font-extrabold flex items-center gap-2"><i data-lucide="briefcase" class="w-5 h-5 text-teal-600"></i>Kerja Praktik</h3>
+<div class="relative pl-6 border-l-2 border-teal-500 space-y-1">
+<div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-teal-500 border-4 border-white"></div>
+<div class="text-xs font-bold text-teal-700">Juli - Oktober 2025</div>
+<h4 class="font-extrabold">PT Kereta Api Indonesia, Daop VII Madiun</h4>
+<div class="text-xs font-semibold text-slate-500">IT Department</div>
+<p class="text-xs text-slate-600 leading-relaxed">Kerja praktik di bagian Teknologi Informasi, berkaitan dengan infrastruktur dan sistem informasi perusahaan. Pada periode ini saya mengembangkan sistem manajemen file Laravel yang terintegrasi dengan Windows NAS melalui SMB/CIFS.</p>
+</div>
+<div class="relative pl-6 border-l-2 border-slate-200 space-y-1">
+<div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-slate-300 border-4 border-white"></div>
+<div class="text-xs font-bold text-slate-500">Agustus - November 2022</div>
+<h4 class="font-extrabold">PT Kereta Api Indonesia, Divre III Palembang</h4>
+<div class="text-xs font-semibold text-slate-500">Information System / IT Department</div>
+<p class="text-xs text-slate-600 leading-relaxed">Kerja praktik di bagian Sistem Informasi dan TI. Saya mengembangkan sistem informasi checklist perangkat IT dan LRT berbasis PHP Native, lengkap dengan pelaporan hasil pemeriksaan untuk manajer.</p>
+</div>
+</div>
+<div class="lg:col-span-7">
+<h3 class="text-lg font-extrabold flex items-center gap-2 mb-4"><i data-lucide="users" class="w-5 h-5 text-pink-500"></i>Organisasi &amp; Kepemimpinan</h3>
+<div id="orgs" class="grid sm:grid-cols-2 gap-4"></div>
+</div>
+</div>
+</section>
+
+<section id="certs" class="space-y-6">
+<h2 class="text-2xl sm:text-3xl font-extrabold border-b border-slate-200 pb-4">Sertifikasi &amp; Pelatihan</h2>
+<div id="cert-groups" class="space-y-8"></div>
+</section>
+
+<section id="licenses" class="space-y-6">
+<h2 class="text-2xl sm:text-3xl font-extrabold border-b border-slate-200 pb-4">Lisensi</h2>
+<div id="license-grid" class="grid md:grid-cols-3 gap-6"></div>
+</section>
+
+<section id="contact" class="rounded-3xl tg text-white p-8 sm:p-12 shadow-xl">
+<div class="grid lg:grid-cols-12 gap-8 items-center">
+<div class="lg:col-span-7 space-y-4">
+<h2 class="text-3xl sm:text-4xl font-black leading-tight">Punya proyek web, sistem informasi, atau IoT?</h2>
+<p class="text-teal-50 max-w-xl">Saya terbuka untuk diskusi proyek, kolaborasi, dan peluang kerja di bidang pengembangan perangkat lunak, infrastruktur jaringan, IoT, dan UI/UX.</p>
+<div class="flex flex-wrap gap-3 pt-2 text-sm font-bold">
+<button onclick="copyText('m.agungwibowo1003@gmail.com')" class="bg-white text-teal-800 px-6 py-3 rounded-2xl flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4"></i>Salin Email</button>
+<a href="https://linkedin.com/in/m-agung-wibowo-694334195" target="_blank" rel="noopener" class="bg-teal-800/60 border border-white/20 px-6 py-3 rounded-2xl flex items-center gap-2"><i data-lucide="external-link" class="w-4 h-4"></i>LinkedIn</a>
+<a href="https://github.com/mag.wibowo" target="_blank" rel="noopener" class="bg-teal-800/60 border border-white/20 px-6 py-3 rounded-2xl flex items-center gap-2"><i data-lucide="external-link" class="w-4 h-4"></i>GitHub</a>
+</div>
+</div>
+<div class="lg:col-span-5 bg-white/15 border border-white/20 rounded-2xl p-6 space-y-3 text-sm">
+<div class="font-bold text-base">M. Agung Wibowo</div>
+<div class="flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4"></i>m.agungwibowo1003@gmail.com</div>
+<div class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4"></i>+62 877-3356-0829</div>
+<div class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4"></i>Palembang, Sumatera Selatan</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer class="border-t border-slate-200 bg-white py-8">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+<span class="font-semibold">© 2026 M. Agung Wibowo. Hosted on GitHub Pages.</span>
+<div class="flex gap-6 font-medium"><a href="https://github.com/mag.wibowo" target="_blank" rel="noopener" class="hover:text-teal-600">GitHub</a><a href="https://linkedin.com/in/m-agung-wibowo-694334195" target="_blank" rel="noopener" class="hover:text-teal-600">LinkedIn</a></div>
+</div>
+</footer>
+
+<div id="modal" class="hidden fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm overflow-y-auto p-4 sm:p-8" role="dialog" aria-modal="true" aria-labelledby="m-title">
+<div class="clean-card rounded-3xl max-w-2xl mx-auto overflow-hidden">
+<div id="m-banner"></div>
+<div class="p-6 sm:p-8 space-y-5">
+<div class="flex items-start justify-between gap-4">
+<div><div id="m-meta" class="text-xs font-bold text-teal-700 mb-1"></div><h3 id="m-title" class="text-2xl font-extrabold leading-tight"></h3></div>
+<button id="m-close" aria-label="Tutup detail" class="p-2 rounded-xl bg-slate-100 shrink-0"><i data-lucide="x" class="w-5 h-5"></i></button>
+</div>
+<div id="m-body" class="space-y-5 text-sm text-slate-600 leading-relaxed"></div>
+</div>
+</div>
+</div>
+
+<script>
+const $=s=>document.querySelector(s);
+const NAV=[['hero','Beranda'],['about','Tentang'],['skills','Keahlian'],['projects','Proyek'],['experience','Pengalaman'],['certs','Sertifikasi'],['licenses','Lisensi'],['contact','Kontak']];
+const EDU=[
+['D4 Teknik Informatika','Politeknik Negeri Malang','2024-2026','IPK 3.54/4.00','Integrasi Network Attached Storage (NAS) pada Sistem Manajemen File Berbasis Laravel di PT Kereta Api Indonesia Daop 7 Madiun. Mencakup aplikasi web, integrasi penyimpanan jaringan via SMB/CIFS, dan pengelolaan file di jaringan internal perusahaan.'],
+['D3 Teknik Komputer','Politeknik Negeri Sriwijaya','2020-2023','IPK 3.47/4.00','Rancang Bangun Alat Pendeteksi Kebisingan dan Pemberi Peringatan Berbasis IoT pada Perpustakaan. Mencakup perancangan hardware, perakitan rangkaian, pemrograman ESP8266, dan integrasi Blynk.']];
+const SKILLS=[
+['code-2','Software Development',['PHP','Laravel','JavaScript','Next.js','Node.js','Express','Dart','Python','HTML & CSS','Leaflet.js']],
+['database','Database Management',['MySQL','PostgreSQL','PostGIS','SQL']],
+['network','IT Infrastructure & Networking',['Computer Networking','Network Administration','Routing & Configuration','Windows NAS','SMB/CIFS Integration']],
+['cpu','Internet of Things',['ESP32','ESP8266','Blynk','Hardware Assembly','Microcontroller Programming']],
+['palette','UI/UX & Creative Design',['Figma','UI/UX Design','Adobe Illustrator','Affinity','CorelDRAW','Adobe Photoshop','Photography']],
+['git-branch','Development Tools',['Git','GitHub','Docker','Jest + Supertest']]];
+const CATS={web:'Web & Software',iot:'IoT & Hardware',design:'Desain'};
+const P=[
+{s:'proyek-geo-report',c:'web',i:'map-pin',t:'Geo-Report',y:'2026',r:'Developer & Spatial Engineer',d:['Aplikasi web yang memungkinkan warga melaporkan masalah kota (jalan berlubang, lampu jalan mati, sampah menumpuk, drainase tersumbat, dll.) dengan menandai lokasi di peta atau memakai GPS perangkat.','Setiap laporan menyimpan koordinat, kategori, deskripsi, dan foto. Admin dapat mengubah status laporan, menggambar zona rawan berbentuk poligon, dan melihat statistik laporan.'],k:['Pelaporan berbasis peta: klik peta atau tombol "Gunakan Lokasi Saya" (GPS), alamat terisi otomatis lewat reverse geocoding, upload foto opsional','Pencarian spasial: filter radius, N laporan terdekat (KNN), filter kategori, dan heatmap kepadatan','Zona rawan: area poligon digambar langsung di peta, laporan di dalam zona otomatis ditandai','Dashboard statistik (jumlah laporan per kategori dan status) dalam bentuk modal','Panel admin dengan login JWT: ubah status, hapus laporan, dan CRUD zona','Riwayat "Laporan Saya" per perangkat, dark mode, tampilan responsif, dan PWA yang bisa diinstal'],tech:['PostgreSQL','PostGIS','Node.js','Express','REST API','GeoJSON','JWT + bcrypt','Leaflet.js','Leaflet.markercluster','Leaflet.heat','Leaflet.draw','LocationIQ','OpenStreetMap','Jest + Supertest','Docker','Git/GitHub']},
+{s:'proyek-nas-laravel',c:'web',i:'server',t:'Laravel File Management System Integrated with NAS',y:'2025',r:'Backend Developer & DevOps',o:'PT Kereta Api Indonesia Daop 7 Madiun',d:['Sistem manajemen file berbasis Laravel yang terintegrasi dengan Network Attached Storage (NAS) berbasis Windows melalui protokol SMB/CIFS di jaringan internal perusahaan.','Proyek ini berfokus pada integrasi aplikasi web dengan infrastruktur penyimpanan jaringan untuk mendukung pengelolaan dokumen perusahaan.'],k:['Pengembangan backend sistem manajemen file dengan Laravel','Integrasi aplikasi dengan Windows NAS','Implementasi komunikasi penyimpanan melalui protokol SMB/CIFS','Pengembangan sistem pengelolaan file berbasis jaringan internal'],tech:['Laravel','PHP','JavaScript','Windows NAS','SMB/CIFS','MySQL']},
+{s:'proyek-smart-parking',c:'iot',i:'car',t:'Smart Parking IoT Prototype',y:'2025',r:'IoT System, Hardware & Network',d:['Prototipe sistem parkiran berbasis Internet of Things menggunakan ESP32.'],k:['Perancangan visualisasi perangkat IoT','Pengembangan konektivitas antar-ESP32','Integrasi komponen perangkat keras dan kelistrikan'],tech:['ESP32','IoT','Electronics','Networking']},
+{s:'proyek-sports-field',c:'web',i:'calendar-days',t:'Sports Field Rental Information System',y:'2025',r:'Frontend Developer',d:['Antarmuka website sistem informasi penyewaan lapangan olahraga yang dibangun dengan Next.js.'],k:['Tampilan dashboard','Halaman daftar penyewaan','Antarmuka pemesanan lapangan olahraga'],tech:['Next.js','JavaScript','Frontend Development']},
+{s:'proyek-healthcare',c:'web',i:'heart-pulse',t:'Polinema Healthcare Information System',y:'2022',r:'Full Stack Developer',d:['Sistem informasi kesehatan Politeknik Negeri Malang berbasis Laravel.'],k:['Fitur chat telemedicine','Tampilan antarmuka percakapan untuk komunikasi di dalam sistem'],tech:['Laravel','PHP','Web Development']},
+{s:'proyek-noise-detection',c:'iot',i:'volume-2',t:'IoT Noise Detection and Warning System',y:'2022',r:'IoT Engineer',d:['Alat pendeteksi kebisingan dan pemberi peringatan berbasis IoT untuk lingkungan perpustakaan. Proyek ini juga menjadi tugas akhir D3 Teknik Komputer.'],k:['Perancangan perangkat keras','Perakitan rangkaian elektronik','Pemrograman ESP8266','Integrasi Blynk sebagai antarmuka pemantauan'],tech:['ESP8266','Blynk','IoT','Electronics','Microcontroller Programming']},
+{s:'proyek-it-lrt-checklist',c:'web',i:'clipboard-check',t:'IT and LRT Equipment Checklist Information System',y:'2022',r:'Backend Developer',o:'PT Kereta Api Indonesia Divre III Palembang',d:['Website PHP Native untuk mendukung pengelolaan checklist perangkat IT dan LRT.','Sistem menyediakan fitur checklist untuk staf IT dan fitur pelaporan bagi manajer untuk memeriksa hasil pemeriksaan perangkat di lingkup Divre III Palembang.'],k:['Fitur checklist untuk staf IT','Fitur pelaporan untuk manajer'],tech:['PHP Native','Web Development','Database']},
+{s:'proyek-karai-hampers',c:'web',i:'shopping-bag',t:'Karai Hampers Catalog Design',y:'2021',r:'FrontEnd Developer',o:'Karai Hampers',d:['Perancangan website yang berisikan Katalog macam-macam Hampers.'],k:['Membuat Katalog pada perancangan website'],tech:['Bootstrap','CSS','Web Development']},
+{s:'proyek-web-jurusan',c:'web',i:'school',t:'Website Jurusan Teknik Komputer',y:'2021',r:'FrontEnd Developer',o:'Teknik Komputer Polsri',d:['Website yang menampilkan Informasi seputar Jurusan Teknik Komputer Politeknik Negeri Sriwijaya.'],k:['Tampilan Daftar Dosen menggunakan Card'],tech:['CSS','Web Development']},
+{s:'proyek-social-on-stage',c:'design',i:'palette',t:'Social on Stage Instagram Carousel Design',y:'2020',r:'Graphic Designer',o:'Fakultas Hukum Universitas Lampung',d:['Desain feed Instagram berbentuk carousel sebagai materi publikasi sebelum acara Social on Stage Fakultas Hukum Universitas Lampung(@sos.fhunila).','Proyek ini menunjukkan pengalaman dalam desain grafis, publikasi digital, dan komunikasi visual untuk kebutuhan acara.'],k:[],tech:['Graphic Design','Social Media Design','Visual Communication']},
+{s:'proyek-feeds-hmj-tekkom',c:'design',i:'image',t:'HMJ Teknik Komputer Polsri Instagram Feeds & Stories ',y:'2021-2022',r:'Graphic Designer',o:'HMJ Teknik Komputer Politeknik Negeri Sriwijaya (@hmjteknikkomputer)',d:['Desain feeds carousel Instagram untuk akun @hmjteknikkomputer sebagai materi publikasi himpunan mahasiswa.'],k:[],tech:['Graphic Design','Social Media Design','Visual Communication']},
+{s:'proyek-feeds-osis-sman5',c:'design',i:'image',t:'OSIS SMAN 5 Palembang Instagram Feeds & Stories',y:'2018-2019',r:'Graphic Designer',o:'OSIS SMA Negeri 5 Palembang (@smanleestagram)',d:['Desain feeds carousel Instagram untuk akun @smanleestagram sebagai materi publikasi OSIS.'],k:[],tech:['Graphic Design','Social Media Design','Visual Communication']}];const ORGS=[
+['HMJ Teknik Komputer Polsri','Ketua Media dan Informasi (Medinfo)','2021-2023','Terlibat dalam kegiatan organisasi di bidang media informasi dan publikasi.'],
+['Google Developer Group on Campus Polsri','Core Team Mentor UI/UX','2022-2023','Mentor UI/UX di komunitas pengembang kampus: desain antarmuka, pengalaman pengguna, dan berbagi pengetahuan.'],
+['Valter 2022 - Festival Multimedia dan Teknik Komputer','Ketua Pelaksana','2022','Memimpin koordinasi kegiatan dan pengelolaan acara mahasiswa Polsri.'],
+['Penerapan Iptek Pengembangan Kewilayahan POLSRI','Anggota Publikasi dan Dokumentasi','2022','Publikasi dan dokumentasi kegiatan Kampung Eduwisata Teluk Perepat, Ogan Ilir.'],
+['OSIS SMA Negeri 5 Palembang','Anggota Bidang IT','2018-2019','Anggota bidang IT organisasi siswa.'],
+['Rohis SMA Negeri 5 Palembang','Anggota Pengelolaan Infaq','2017-2019','Anggota bidang pengelolaan infaq.']];
+const CERTS=[
+['Programming & Software Development','code-2',[['Course OOP','ID-Networks','2026','LIDN-3531666598'],['Pemrograman Dart Dasar','ID-Networks','2026','LIDN-3662853763'],['Memulai Pemrograman dengan Python','Dicoding Indonesia','2026','0LZ0JD320X65'],['Belajar Dasar Pemrograman JavaScript','Dicoding Indonesia','2026','MRZMVKMOKZYQ'],['Belajar Dasar Structured Query Language (SQL)','Dicoding Indonesia','2026','0LZ0J3VR3X65'],['Belajar Dasar Pemrograman Web','Dicoding Indonesia','2026','JMZVLGQ4RXN9'],['Belajar Membuat Front-End Web untuk Pemula','Dicoding Indonesia','2026','MRZMVD5YRZYQ']]],
+['Data & Cloud','cloud',[['Belajar Machine Learning untuk Pemula','Dicoding Indonesia','2026','JLX1K3G3GP72'],['Belajar Dasar Data Science','Dicoding Indonesia','2026','QLZ9N1L37Z5D'],['Belajar Dasar Cloud dan Gen AI di AWS','Dicoding Indonesia','2021','NVP71N41OPR0']]]];
+const LICENSES=[
+['Network Administrator Muda','Lembaga Sertifikasi Profesi Polinema','2026',''],
+['Intermediate Multimedia Designer (Vocational School Graduate Academy)','Digital Talent Scholarship','2023','19363531150-46'],
+['Junior Graphic Designer (Vocational School Graduate Academy)','Digital Talent Scholarship','2022','74100 2166 16798 2022']];
+const SLIDES=[['assets/foto-1.jpg'],['assets/foto-2.jpeg','Pelaksanaan Magang di PT KAI'],['assets/foto-3.jpg','Ketua Pelaksana Festival Multimedia dan Teknik Komputer'],['assets/foto-4.jpeg','Kegiatan Kelas di Polinema'],['assets/foto-5.jpeg','Mentor UI/UX di Google Developer Group on Campus Polsri']];
+const chip=(t,cls='bg-slate-100 text-slate-700 border-slate-200')=>`<span class="px-2.5 py-1 rounded-lg text-xs font-semibold border ${cls}">${t}</span>`;
+const tone=n=>n%2?['pg','text-pink-600 bg-pink-50 border-pink-100']:['tg','text-teal-700 bg-teal-50 border-teal-100'];
+const banner=(p,n,h)=>`<div class="relative ${tone(n)[0]} ${h} flex items-center justify-center text-white/90"><i data-lucide="${p.i}" class="w-12 h-12"></i><img src="img/${p.s}.jpg" alt="Pratinjau ${p.t}" loading="lazy" class="absolute inset-0 w-full h-full object-cover" onerror="this.remove()"></div>`;
+
+$('#nav').innerHTML=NAV.map(([id,l])=>`<a href="#${id}" class="px-4 py-2 rounded-full text-slate-700 hover:text-teal-600 hover:bg-white transition">${l}</a>`).join('');
+$('#menu').innerHTML=NAV.map(([id,l])=>`<a href="#${id}" class="block px-3 py-2 rounded-lg font-medium hover:bg-slate-100">${l}</a>`).join('');
+$('#menu-btn').onclick=()=>$('#menu').classList.toggle('hidden');
+$('#menu').onclick=()=>$('#menu').classList.add('hidden');
+
+$('#edu').innerHTML=EDU.map(e=>`<div class="clean-card rounded-3xl p-6 space-y-2"><div class="text-xs font-bold text-teal-700">${e[2]} | ${e[3]}</div><h3 class="font-extrabold text-lg leading-tight">${e[0]}</h3><div class="text-sm font-semibold text-slate-500">${e[1]}</div><p class="text-xs text-slate-600 leading-relaxed pt-1"><b>Tugas akhir:</b> ${e[4]}</p></div>`).join('');
+
+$('#skill-grid').innerHTML=SKILLS.map((s,n)=>`<div class="clean-card rounded-3xl p-6 space-y-4"><div class="w-11 h-11 rounded-2xl ${tone(n)[1]} border flex items-center justify-center"><i data-lucide="${s[0]}" class="w-5 h-5"></i></div><h3 class="font-bold text-lg">${s[1]}</h3><div class="flex flex-wrap gap-2">${s[2].map(x=>chip(x)).join('')}</div></div>`).join('');
+
+$('#orgs').innerHTML=ORGS.map(o=>`<div class="clean-card rounded-2xl p-5 space-y-1"><div class="text-xs font-bold text-pink-600">${o[2]}</div><h4 class="font-extrabold leading-snug">${o[0]}</h4><div class="text-xs font-semibold text-teal-700">${o[1]}</div><p class="text-xs text-slate-600 leading-relaxed pt-1">${o[3]}</p></div>`).join('');
+
+/* Link sertifikat: isi elemen ke-5 tiap baris dengan URL penuh, mis. [...,'2026','ID','https://...'].
+   Jika kosong, sertifikat Dicoding otomatis memakai https://www.dicoding.com/certificates/<ID>. */
+const cu=c=>c[4]||(c[1]==='Dicoding Indonesia'&&c[3]?'https://www.dicoding.com/certificates/'+encodeURIComponent(c[3]):'');
+const cl=c=>cu(c)?`<a href="${cu(c)}" target="_blank" rel="noopener" class="inline-flex items-center gap-1 mt-2 font-bold text-teal-700 hover:underline">Lihat sertifikat<i data-lucide="external-link" class="w-3 h-3"></i></a>`:'';
+$('#cert-groups').innerHTML=CERTS.map(g=>`<div class="space-y-3"><h3 class="font-extrabold flex items-center gap-2"><i data-lucide="${g[1]}" class="w-5 h-5 text-teal-600"></i>${g[0]}</h3><div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">${g[2].map(c=>`<div class="clean-card rounded-2xl p-4 text-xs"><div class="font-bold text-sm leading-snug">${c[0]}</div><div class="text-slate-500 mt-1">${c[1]} (${c[2]})</div>${c[3]?`<div class="text-slate-400 mt-1">ID: ${c[3]}</div>`:''}${cl(c)}</div>`).join('')}</div></div>`).join('');
+
+$('#license-grid').innerHTML=LICENSES.map((l,n)=>`<div class="clean-card rounded-3xl p-6 space-y-3"><div class="w-11 h-11 rounded-2xl ${tone(n)[1]} border flex items-center justify-center"><i data-lucide="badge-check" class="w-5 h-5"></i></div><h3 class="font-extrabold leading-snug">${l[0]}</h3><div class="text-xs text-slate-500">${l[1]} (${l[2]})</div>${l[3]?`<div class="text-xs text-slate-400">ID: ${l[3]}</div>`:''}<div class="text-xs">${cl(l)}</div></div>`).join('');
+
+$('#tabs').innerHTML=[['all','Semua'],...Object.entries(CATS)].map(([k,l],n)=>`<button data-k="${k}" class="tab px-3.5 py-1.5 rounded-lg transition ${n?'text-slate-600':'bg-white text-teal-600 shadow-sm'}">${l}</button>`).join('');
+$('#project-grid').innerHTML=P.map((p,n)=>`<article data-c="${p.c}" class="pcard clean-card rounded-3xl p-5 flex flex-col gap-4 hover:border-teal-500 transition"><div class="rounded-2xl overflow-hidden">${banner(p,n,'h-40')}</div><div class="flex-1"><div class="flex items-center gap-2 mb-2">${chip(CATS[p.c],tone(n)[1])}${chip(p.y)}</div><h3 class="font-extrabold text-lg leading-snug">${p.t}</h3><div class="text-xs font-semibold text-slate-500 mt-1">${p.r}</div><p class="text-xs text-slate-600 mt-2 leading-relaxed">${p.d[0]}</p></div><button onclick="openProject('${p.s}')" class="w-full py-2.5 px-3 rounded-xl bg-slate-50 hover:bg-teal-50 hover:text-teal-700 font-bold text-xs flex items-center justify-between transition">Lihat detail proyek<i data-lucide="arrow-up-right" class="w-4 h-4"></i></button></article>`).join('');
+document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{
+document.querySelectorAll('.tab').forEach(t=>{t.className=t.className.replace('bg-white text-teal-600 shadow-sm','text-slate-600')});
+b.className=b.className.replace('text-slate-600','bg-white text-teal-600 shadow-sm');
+document.querySelectorAll('.pcard').forEach(c=>c.classList.toggle('hidden',b.dataset.k!=='all'&&c.dataset.c!==b.dataset.k));});
+
+function showModal(slug){
+const n=P.findIndex(x=>x.s===slug);if(n<0)return false;const p=P[n];
+$('#m-banner').innerHTML=banner(p,n,'h-44');
+$('#m-meta').textContent=`${CATS[p.c]} | ${p.y}`;
+$('#m-title').textContent=p.t;
+$('#m-body').innerHTML=`<div class="font-semibold text-slate-800">${p.r}${p.o?`<div class="text-xs font-medium text-slate-500">${p.o}</div>`:''}</div>${p.d.map(x=>`<p>${x}</p>`).join('')}${p.k.length?`<div><div class="font-bold text-slate-900 mb-1">Kontribusi utama</div><ul class="list-disc pl-5 space-y-1">${p.k.map(x=>`<li>${x}</li>`).join('')}</ul></div>`:''}<div><div class="font-bold text-slate-900 mb-2">${p.c==='design'?'Fokus':'Teknologi'}</div><div class="flex flex-wrap gap-2">${p.tech.map(x=>chip(x,'bg-teal-50 text-teal-700 border-teal-100')).join('')}</div></div>`;
+$('#modal').classList.remove('hidden');document.body.classList.add('overflow-hidden');
+lucide.createIcons();$('#m-close').focus();return true;}
+function openProject(slug){if(showModal(slug)&&location.hash!=='#'+slug)location.hash=slug;}
+function closeModal(){$('#modal').classList.add('hidden');document.body.classList.remove('overflow-hidden');if(location.hash.startsWith('#proyek-'))history.pushState(null,'',location.pathname+location.search);}
+$('#m-close').onclick=closeModal;
+$('#modal').onclick=e=>{if(e.target.id==='modal')closeModal()};
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+function syncHash(){if(!showModal(location.hash.slice(1))){$('#modal').classList.add('hidden');document.body.classList.remove('overflow-hidden');}}
+window.addEventListener('hashchange',syncHash);
+
+function copyText(t){(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).catch(()=>{}).finally(()=>{const e=$('#toast');e.textContent='Email disalin: '+t;e.classList.remove('-translate-y-40','opacity-0');setTimeout(()=>e.classList.add('-translate-y-40','opacity-0'),2500)})}
+
+let si=0,st;
+$('#slides').innerHTML=SLIDES.map((s,n)=>`<div class="min-w-full h-full relative ${n%2?'pg':'tg'} flex items-center justify-center text-white/90 text-7xl font-black">AW<img src="${s[0]}" alt="${s[1]}" class="absolute inset-0 w-full h-full object-cover" onerror="this.remove()"></div>`).join('');
+$('#dots').innerHTML=SLIDES.map((_,n)=>`<button aria-label="Foto ${n+1}" class="dot w-2.5 h-2.5 rounded-full bg-white opacity-50"></button>`).join('');
+document.querySelectorAll('.dot').forEach((d,n)=>d.onclick=()=>{goSlide(n);play()});
+function goSlide(n){si=(n+SLIDES.length)%SLIDES.length;$('#slides').style.transform=`translateX(-${si*100}%)`;$('#cap').textContent=SLIDES[si][1];document.querySelectorAll('.dot').forEach((d,i)=>{d.classList.toggle('opacity-100',i===si);d.classList.toggle('opacity-50',i!==si)})}
+const reduceMotion=matchMedia('(prefers-reduced-motion: reduce)').matches;
+function play(){clearInterval(st);if(!reduceMotion)st=setInterval(()=>goSlide(si+1),5000)}
+$('#s-prev').onclick=()=>{goSlide(si-1);play()};
+$('#s-next').onclick=()=>{goSlide(si+1);play()};
+$('#slider').addEventListener('mouseenter',()=>clearInterval(st));
+$('#slider').addEventListener('mouseleave',play);
+goSlide(0);play();
+
+lucide.createIcons();
+if(location.hash.startsWith('#proyek-'))syncHash();
+</script>
+</body>
+</html>
